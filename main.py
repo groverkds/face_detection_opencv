@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 import face_detection.face_detection as face_detection
+import os
+import sys
 
 def Image(path):
 	face_detector = face_detection.FaceDetector()

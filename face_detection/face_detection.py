@@ -3,7 +3,7 @@ import argparse
 import cv2
 
 class FaceDetector:
-	def __init__(self,prototxt_path="deploy.prototxt.txt",model_path="res10_300x300_ssd_iter_140000.caffemodel",confidence=0.5):
+	def __init__(self,prototxt_path="./model/deploy.prototxt.txt",model_path="./model/res10_300x300_ssd_iter_140000.caffemodel",confidence=0.5):
 		self.net = cv2.dnn.readNetFromCaffe(prototxt_path,model_path)
 		self.confidence = confidence
 
